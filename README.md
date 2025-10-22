@@ -140,7 +140,7 @@ python app/agents/coordinator.py
 
 ### Problems I faced:
 
-The linkedin profile scraping doesn't work sometime because of linkedin policy maybe, sometimes proxy doesnot work. I tried many things like linkedin scraper like scrapong but it doesnot work every time. So I stayed with `scrapingdog api` for both linkedin profile and company page scraping.
+The linkedin profile scraping doesn't work sometime because of linkedin policy maybe, sometimes proxy doesnot work. I tried many things like linkedin scraper like scraping library but it doesn't work every time. So I stayed with `scrapingdog api` for both linkedin profile and company page scraping.
 
 ---
 
