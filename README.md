@@ -135,7 +135,12 @@ python app/agents/coordinator.py
 - **API-Only Scraping**: Removed selenium/headless browser, using Scrapingdog API for reliability
 - **LangGraph State Machine**: Clean orchestration with conditional routing based on change severity
 - **Async MongoDB**: Per-URL databases for scalable change tracking
-- **Production-Ready**: Celery for distributed tasks, proper error handling, fallback modes
+
+---
+
+### Problems I faced:
+
+The linkedin profile scraping doesnot work sometime because of linkedin policy maybe, sometimes proxy doesnot work. I tried many things like linkedin scraper like scrapong but it doesnot work every time. So I stayed with `scrapingdog api` for both linkedin profile and company page scraping.
 
 ---
 
