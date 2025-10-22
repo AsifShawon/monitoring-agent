@@ -2,7 +2,7 @@
 
 An intelligent monitoring system that tracks changes on LinkedIn profiles, companies, and websites using **LangGraph** workflows, **Gemini AI** analysis, and automated notifications.
 
-## 🎯 Approach
+# Approach
 
 **Architecture**: FastAPI REST API + Celery task queue + MongoDB + LangGraph orchestration
 
@@ -14,9 +14,9 @@ An intelligent monitoring system that tracks changes on LinkedIn profiles, compa
 - **Notifier Agent**: Email alerts with HTML templates
 - **Coordinator**: LangGraph state machine orchestrating the workflow
 
-## 🏗️ Architecture
+## Architecture
 
-## 🚀 Tech Stack
+### Tech Stack
 
 - **FastAPI**: REST API with async MongoDB
 - **LangGraph**: State machine for agent orchestration
@@ -25,7 +25,7 @@ An intelligent monitoring system that tracks changes on LinkedIn profiles, compa
 - **MongoDB**: NoSQL database for users, targets, and changes
 - **Scrapingdog API**: LinkedIn data extraction
 
-## 🚀 Tech Stack
+### Tech Stack
 
 - **LangGraph**: Workflow orchestration
 - **LangChain**: AI framework with Google Generative AI integration
@@ -37,7 +37,7 @@ An intelligent monitoring system that tracks changes on LinkedIn profiles, compa
 - **Playwright/Selenium**: Website scraping
 - **SMTP**: Email notifications
 
-## � Project Structure
+## Project Structure
 
 ```
 monitoring-agent/
@@ -60,12 +60,12 @@ monitoring-agent/
 └── .env.example                   
 
 ```
-## 📋 Prerequisites
+## Prerequisites
 
 - Python 3.10+, MongoDB, Redis
 - Scrapingdog API key, Gemini API key, SMTP credentials
 
-## 🚀 Quick Start
+## Quick Start
 
 ```bash
 # Install dependencies
@@ -84,7 +84,7 @@ curl http://localhost:8000/health
 
 Visit http://localhost:8000/docs for API documentation.
 
-## 📚 API Usage
+## API Usage
 
 ```bash
 # 1. User signup
@@ -107,7 +107,7 @@ GET /users/{user_id}/changes
 DELETE /targets/{target_id}
 ```
 
-## 🔄 How It Works
+## How It Works
 
 1. User creates target via REST API
 2. Celery Beat scheduler checks due targets periodically
@@ -117,7 +117,7 @@ DELETE /targets/{target_id}
    - **Notifier Node**: Sends email if significant changes
 4. Changes stored in MongoDB, user notified via email
 
-## 🧪 Testing
+## Testing
 
 ```bash
 # Test individual agents
@@ -125,11 +125,9 @@ python app/agents/scraper.py
 python app/agents/analyzer.py
 python app/agents/coordinator.py
 
-# View database
-python view_db.py
 ```
 
-## 📊 Implementation Highlights
+## Implementation Highlights
 
 - **Simplified Routes**: Kept only 9 essential endpoints (user signup, target CRUD, change history, health)
 - **API-Only Scraping**: Removed selenium/headless browser, using Scrapingdog API for reliability
