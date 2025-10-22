@@ -82,9 +82,11 @@ cp .env.example .env
 curl http://localhost:8000/health
 ```
 
-Visit http://localhost:8000/docs for API documentation.
+Visit http://localhost:8000/docs for interactive API documentation, or use **Postman** to test endpoints.
 
 ## API Usage
+
+**Testing with Postman**: Import endpoints and test all API operations with Postman for a better testing experience.
 
 ```bash
 # 1. User signup
