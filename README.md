@@ -43,25 +43,21 @@ An intelligent monitoring system that tracks changes on LinkedIn profiles, compa
 monitoring-agent/
 ├── app/
 │   ├── agents/
-│   │   ├── coordinator.py         # LangGraph workflow
-│   │   ├── analyzer.py            # LangChain + Gemini analyzer
-│   │   ├── notifier.py            # Email notification agent
-│   │   ├── scraper.py             # Data scraping
-│   │   ├── scraper_agent.py       # Celery task wrapper
-│   │   ├── scheduler_agent.py     # Periodic scheduler
-│   │   └── schedule.py            # Celery configuration
-│   ├── routes_complete.py         # Complete REST API
-│   ├── database.py                # MongoDB connection
-│   ├── models.py                  # Pydantic models
-│   ├── config.py                  # Configuration
-│   └── main.py                    # FastAPI entry point
-├── test_api.py                    # API test script
-├── run_all_services.sh            # Start all services (tmux)
-├── start_all_services.sh          # Prerequisites check
-├── SYSTEM_INTEGRATION.md          # Complete integration guide
-├── TESTING_GUIDE.md               # Testing documentation
-├── requirements.txt               # Python dependencies
-└── .env.example                   # Environment template
+│   │   ├── coordinator.py         
+│   │   ├── analyzer.py            
+│   │   ├── notifier.py            
+│   │   ├── scraper.py             
+│   │   ├── scraper_agent.py       
+│   │   ├── scheduler_agent.py     
+│   │   └── schedule.py            
+│   ├── routes_complete.py         
+│   ├── database.py                
+│   ├── models.py                  
+│   ├── config.py
+│   └── main.py                                   
+├── run_all_services.sh            # (tmux)
+├── requirements.txt               
+└── .env.example                   
 
 ```
 ## 📋 Prerequisites
