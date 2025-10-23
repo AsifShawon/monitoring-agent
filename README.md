@@ -142,6 +142,8 @@ python app/agents/coordinator.py
 
 The linkedin profile scraping doesn't work sometime because of linkedin policy maybe, sometimes proxy doesnot work. I tried many things like linkedin scraper like scraping library but it doesn't work every time. So I stayed with `scrapingdog api` for both linkedin profile and company page scraping.
 
+Another problem I faced with proxy api, as I was unable do it in a right way. May be a better implementation with proxy server could have been helped with the linkedin bypass.
+
 ---
 
 Built with LangGraph, LangChain, FastAPI, and MongoDB
